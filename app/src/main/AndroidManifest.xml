@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.man">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Myapp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeQuanp"
+        tools:replace="android:icon, android:theme">
+        <activity android:name=".HoloActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ZhuyeActivity" />
+        <activity android:name=".Xiangqingye" />
+        <activity android:name=".ZhenzhengdeMage" />
+        <activity android:name=".WebshopjISAO" />
+        <activity android:name=".denglu" />
+        <activity android:name=".ZhucheActivty" />
+        <activity android:name=".Zhifu"></activity>
+    </application>
+
+</manifest>

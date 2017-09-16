@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/tou"
+        android:background="#ffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:text="好商城v5"
+            android:layout_margin="12dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3c3c"
+        android:id="@+id/zhong"
+        android:layout_below="@+id/tou"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/gwcimage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gwcname"
+            android:text="哈哈哈"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/gwcimage"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gwcprice"
+            android:layout_below="@+id/gwcname"
+            android:text="$10000000"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:id="@+id/gwcnum"
+            android:text="*2"
+            android:layout_below="@+id/gwcprice"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heji"
+        android:text="共2件商品，合计20000元"
+        android:layout_below="@+id/zhong"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:id="@+id/delete"
+        android:layout_below="@+id/heji"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gwcjj"
+        android:layout_below="@id/heji"
+        android:layout_alignParentRight="true"
+        >
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/jian"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/number"
+            android:layout_toStartOf="@+id/number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number"
+            android:text="0"
+            android:focusable="true"
+            android:textSize="24sp"
+            android:focusableInTouchMode="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/jia"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/jia" />
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/jia"
+            android:text="+"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

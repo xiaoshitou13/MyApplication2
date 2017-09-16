@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:id="@+id/im"
+        android:src="@mipmap/tubiap"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:text="哈哈"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/im"
+        android:layout_toRightOf="@+id/im"
+        android:layout_toEndOf="@+id/im"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>

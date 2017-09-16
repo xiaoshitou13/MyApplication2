@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.man.Zhifu">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/toumus"
+        android:background="#F76C2F">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backs"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/leftjiantou"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zhuces"
+            android:text="支付"
+            android:textSize="24sp"
+            android:layout_toRightOf="@+id/backs"
+            android:textColor="#ffff"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/s"
+        android:layout_below="@+id/toumus">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shouhuo"
+            android:text="收货地址："
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dizhi"
+            android:layout_marginTop="10dp"
+            android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+            android:layout_below="@+id/shouhuo"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zhongs"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/s"
+        android:layout_alignLeft="@+id/s"
+        android:layout_alignStart="@+id/s">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/z"
+            android:text="支付方式,共2元"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yue"
+            android:layout_below="@+id/z"
+            android:background="#ffff"
+            android:text="余额"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/zhifubao"
+            android:layout_below="@+id/yue"
+            android:background="#ffff"
+            android:text="支付宝"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weixin"
+            android:layout_below="@+id/zhifubao"
+            android:background="#ffff"
+            android:text="微信"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

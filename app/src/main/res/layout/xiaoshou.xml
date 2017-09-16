@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yi"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pricequjian"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="价格区间 :"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pricestart"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/pricequjian"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pricequjians"
+            android:layout_centerVertical="true"
+            android:text="---"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/pricestart"
+            />
+
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/endedit"
+            android:layout_toRightOf="@+id/pricequjians"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:id="@+id/yuan"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/endedit"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/er"
+    android:layout_below="@+id/yi"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leixing"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:text="商品类型："/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tgsp"
+        android:layout_centerVertical="true"
+        android:text="团购商品"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/peise"
+        android:layout_toRightOf="@+id/leixing"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xszk"
+        android:layout_centerVertical="true"
+        android:text="限时折扣"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/peise"
+        android:layout_toRightOf="@+id/tgsp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有赠品"
+        android:id="@+id/zp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/peise"
+        android:layout_toRightOf="@+id/xszk"/>
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/san"
+        android:layout_below="@+id/er"
+        android:layout_marginTop="14dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leixing"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="店铺类型："/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ptzy"
+            android:layout_centerVertical="true"
+            android:text="平台自营"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/peise"
+            android:layout_toRightOf="@+id/leixing"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
